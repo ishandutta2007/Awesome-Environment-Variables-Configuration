@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="100%" height="auto">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <radialGradient id="glow1" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow2" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.6"/>
+      <circle cx="40" cy="40" r="1" fill="#475569" fill-opacity="0.4"/>
+    </pattern>
+
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <style>
+      @keyframes pulseOrb {
+        0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.3; }
+        50% { transform: scale(1.15) translate(-15px, -10px); opacity: 0.55; }
+      }
+      @keyframes floatParticle {
+        0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+        50% { transform: translateY(-20px) translateX(15px); opacity: 0.8; }
+        100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+      }
+      @keyframes dashAnim {
+        from { stroke-dashoffset: 200; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes pulseGlow {
+        0%, 100% { filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4)); }
+        50% { filter: drop-shadow(0 0 20px rgba(129, 140, 248, 0.7)); }
+      }
+      .anim-orb-1 { animation: pulseOrb 8s ease-in-out infinite; transform-origin: 200px 100px; }
+      .anim-orb-2 { animation: pulseOrb 10s ease-in-out infinite 2s; transform-origin: 1000px 300px; }
+      .p1 { animation: floatParticle 5s ease-in-out infinite; }
+      .p2 { animation: floatParticle 7s ease-in-out infinite 1.5s; }
+      .p3 { animation: floatParticle 6s ease-in-out infinite 3s; }
+      .flow-line { stroke-dasharray: 8 6; animation: dashAnim 12s linear infinite; }
+      .main-title { animation: pulseGlow 6s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="400" rx="16" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <rect width="1200" height="400" rx="16" fill="url(#grid)"/>
+
+  <!-- Dynamic Animated Glow Orbs in Background -->
+  <circle class="anim-orb-1" cx="220" cy="120" r="180" fill="url(#glow1)"/>
+  <circle class="anim-orb-2" cx="980" cy="280" r="220" fill="url(#glow2)"/>
+
+  <!-- Background Animated Data Stream / Circuit Lines -->
+  <g opacity="0.35">
+    <path class="flow-line" d="M 50,340 C 250,340 300,380 500,380 C 700,380 750,340 1150,340" fill="none" stroke="#38bdf8" stroke-width="2"/>
+    <path class="flow-line" d="M 50,60 C 250,60 350,20 600,20 C 850,20 950,60 1150,60" fill="none" stroke="#818cf8" stroke-width="2"/>
+    <path class="flow-line" d="M 100,200 L 1100,200" fill="none" stroke="#475569" stroke-width="1"/>
+  </g>
+
+  <!-- Floating Ambient Particles -->
+  <circle class="p1" cx="150" cy="180" r="3" fill="#38bdf8"/>
+  <circle class="p2" cx="1050" cy="140" r="3.5" fill="#c084fc"/>
+  <circle class="p3" cx="600" cy="350" r="2.5" fill="#818cf8"/>
+  <circle class="p1" cx="350" cy="70" r="2" fill="#38bdf8"/>
+  <circle class="p2" cx="850" cy="70" r="3" fill="#818cf8"/>
+
+  <!-- Card Border Outline -->
+  <rect width="1196" height="396" x="2" y="2" rx="15" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.8"/>
+
+  <!-- Foreground Content Container (Guaranteed in foreground) -->
+  <g id="foreground-content">
+    
+    <!-- Top Pill / Badge -->
+    <g transform="translate(600, 75)" text-anchor="middle">
+      <rect x="-185" y="-16" width="370" height="32" rx="16" fill="#1e293b" fill-opacity="0.85" stroke="#475569" stroke-width="1"/>
+      <circle cx="-165" cy="0" r="5" fill="#10b981"/>
+      <text x="-150" y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#94a3b8" letter-spacing="1.5" text-anchor="start">
+        DEVSECOPS &#x2022; SECRETS &#x2022; CONFIG MANAGEMENT
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text class="main-title" x="600" y="155" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" fill="url(#textGrad)" letter-spacing="-0.5" filter="url(#shadow)">
+      Awesome Environment Variables
+    </text>
+    
+    <!-- Secondary Title Line -->
+    <text x="600" y="205" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="32" font-weight="700" fill="#f8fafc" letter-spacing="-0.5" filter="url(#shadow)">
+      &amp; Configuration Ecosystem
+    </text>
+
+    <!-- Subtitle / Tagline -->
+    <text x="600" y="255" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#94a3b8">
+      Curated guide to SaaS platforms, secrets vaults, runtime injection engines &amp; self-hosted parameter stores
+    </text>
+
+    <!-- Feature Badges / Highlights Row -->
+    <g transform="translate(600, 315)" text-anchor="middle">
+      <!-- Tag 1 -->
+      <g transform="translate(-290, 0)">
+        <rect x="-85" y="-15" width="170" height="30" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#38bdf8" stroke-width="1"/>
+        <text y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#38bdf8">Runtime Injection</text>
+      </g>
+      <!-- Tag 2 -->
+      <g transform="translate(-95, 0)">
+        <rect x="-85" y="-15" width="170" height="30" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#818cf8" stroke-width="1"/>
+        <text y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#a5b4fc">Zero-Trust Vaults</text>
+      </g>
+      <!-- Tag 3 -->
+      <g transform="translate(95, 0)">
+        <rect x="-85" y="-15" width="170" height="30" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#c084fc" stroke-width="1"/>
+        <text y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#e9d5ff">Feature Flags</text>
+      </g>
+      <!-- Tag 4 -->
+      <g transform="translate(290, 0)">
+        <rect x="-85" y="-15" width="170" height="30" rx="8" fill="#1e293b" fill-opacity="0.9" stroke="#10b981" stroke-width="1"/>
+        <text y="5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#6ee7b7">Self-Hosted OSS</text>
+      </g>
+    </g>
+
+  </g>
+</svg>
