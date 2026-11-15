@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Environment-Variables-Configuration/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Environment-Variables-Configuration?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Environment-Variables-Configuration/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Environment-Variables-Configuration?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Environment-Variables-Configuration/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Environment-Variables-Configuration?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Environment-Variables-Configuration/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Environment-Variables-Configuration?style=flat-square&color=success" alt="GitHub Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Environment-Variables-Configuration/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT" /></a>
@@ -72,9 +72,9 @@ Open-source tooling is essential for engineering teams seeking strict data sover
 
 ### 🏆 Primary Open-Source Solutions (Ranked by Stars)
 
-*Repositories are sorted in descending order based on their GitHub stargazer count. Each star badge links directly to that repository's stargazers page.*
+*Repositories are sorted in descending order based on their GitHub stargazer count. Each Stars_Badge links directly to that repository's stargazers page.*
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |---------|------------|-------------|
 | **[HashiCorp Vault](https://github.com/hashicorp/vault)** | [![Stars](https://img.shields.io/github/stars/hashicorp/vault?style=social&color=white)](https://github.com/hashicorp/vault/stargazers) | 🛡️ **The enterprise foundation of secret management.** Hardware security module (HSM) integration, **dynamic on-demand secrets** with automated lease revocation, encryption-as-a-service (transit engine), and tamper-evident audit logging. |
 | **[Infisical](https://github.com/Infisical/infisical)** | [![Stars](https://img.shields.io/github/stars/Infisical/infisical?style=social&color=white)](https://github.com/Infisical/infisical/stargazers) | 🔑 **Comprehensive open-source secrets management platform.** End-to-end encrypted secret sync across cloud providers, Kubernetes Operator, native CLI, PKI/certificate manager, and AI agent credential proxying. |
@@ -89,7 +89,7 @@ Open-source tooling is essential for engineering teams seeking strict data sover
 
 ### 🛠️ SDKs &amp; Specialized Integrations
 
-| Project | Star Badge | Description |
+| Project | Stars_Badge | Description |
 |---------|------------|-------------|
 | **[Pulumi ESC (SDK)](https://github.com/pulumi/esc)** | [![Stars](https://img.shields.io/github/stars/pulumi/esc?style=social&color=white)](https://github.com/pulumi/esc/stargazers) | 🧩 **Open-source SDK for Pulumi ESC environments.** Programmatically list, open, validate, and read hierarchical environments and secrets via .NET (`Pulumi.Esc.Sdk`), Python, and Go. |
 | **[ConfigCat (Common JS / SDKs)](https://github.com/configcat/common-js)** | [![Stars](https://img.shields.io/github/stars/configcat/common-js?style=social&color=white)](https://github.com/configcat/common-js/stargazers) | 🎯 **Open-source SDK implementations for ConfigCat feature flags.** Demonstrates caching, offline mode, and feature targeting evaluation across JavaScript, React, Angular, and Node.js. |
