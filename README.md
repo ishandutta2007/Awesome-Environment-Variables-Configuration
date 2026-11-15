@@ -1,6 +1,6 @@
 # Awesome-Environment-Variables-Configuration
 
-# Top Environment Variables & Configuration Ecosystem
+## Top Environment Variables & Configuration Ecosystem
 
 **Curated List of SaaS Platforms & Open-Source GitHub Projects**  
 *Focused on Secrets Management, Config Injection & Self-Hosted Parameter Stores*  
